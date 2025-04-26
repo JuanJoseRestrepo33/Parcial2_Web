@@ -1,12 +1,14 @@
-<h1 class="text-center fw-bold mt-4">Vivero El Otoño</h1>
+<h1 class="titulo mt-4">Vivero El Otoño</h1>
 
-<div class="d-flex justify-content-center">
+<hr class="linea-separadora" />
+<div class="banner-wrapper">
   <img src="/images/banner2.png" alt="Banner Vivero" class="banner-img" />
 </div>
+<hr class="linea-separadora" />
 
 <div class="container mt-4">
   <h2>Plantas en venta</h2>
-  <table class="table table-bordered table-striped">
+  <table class="table tabla-plantas">
     <thead class="table-dark">
       <tr>
         <th>#</th>
@@ -17,7 +19,7 @@
     </thead>
     <tbody>
       <tr *ngFor="let planta of plantas; let i = index">
-        <td>{{ i + 1 }}</td>
+        <td class="numero-fila">{{ i + 1 }}</td>
         <td>{{ planta.nombre_comun }}</td>
         <td>{{ planta.tipo }}</td>
         <td>{{ planta.clima }}</td>
@@ -30,13 +32,9 @@
 </div>
 
 <footer class="footer text-center">
-  <p class="mb-0">
-    Contact us:
-    <a href="tel:+573102105253">+57 3102105253</a> &nbsp;–&nbsp;
-    <a href="mailto:info@viveroelotono.com">info&#64;viveroelotono.com</a> &nbsp;–&nbsp;
-    <a href="https://instagram.com/viveroelotono" target="_blank">&#64;viveroelotono</a>
+  <p class="mb-0 fw-bold">
+    📞 <a href="tel:+573102105253">+57 3102105253</a> &nbsp;–&nbsp;
+    ✉️ <a href="mailto:info@viveroelotono.com">info&#64;viveroelotono.com</a> &nbsp;–&nbsp;
+    📸 <a href="https://instagram.com/viveroelotono" target="_blank">&#64;viveroelotono</a>
   </p>
 </footer>
-
-
-
